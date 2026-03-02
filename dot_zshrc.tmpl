@@ -1,0 +1,5 @@
+{{- if eq .chezmoi.os "darwin" -}}
+{{-   template "dot_zshrc_darwin" . -}}
+{{- else if eq .chezmoi.os "linux" -}}
+{{-   template "dot_bashrc_linux" . -}}
+{{- end -}}
